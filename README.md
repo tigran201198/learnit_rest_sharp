@@ -2,4 +2,4 @@ This is repository with the source code for Rest Sharp and Postman course by Tig
 
 Only students of Tigran Ter-Karapetyants can use these code examples. Thanks for respecting hard work of the author.
 
-2021 © Tigran Ter-Karapetyants
+2022 © Tigran Ter-Karapetyants
