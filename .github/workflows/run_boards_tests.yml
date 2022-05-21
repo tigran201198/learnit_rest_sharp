@@ -1,4 +1,4 @@
-name: Run Amazon Search tests 
+name: Run Boards tests 
 
 on:
   push:
