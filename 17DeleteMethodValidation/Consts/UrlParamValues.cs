@@ -20,7 +20,7 @@ namespace _17DeleteMethodValidation.Consts
             new Parameter("token", "492343b8106e7df3ebb7f01e219cbf32827c852a5f9e2b8f9ca296b1cc604955", ParameterType.QueryString)
         };
 
-        public const string ExistingBoardId = "61fe437419cdd87656ce9fa6";
+        public const string ExistingBoardId = "6288cc5d3ce8fc87542dff31";
         public const string BoardIdToUpdate = "60d84769c4ce7a09f9140220";
         public const string Username = "learnpostman";
     }
