@@ -24,7 +24,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: 3.1.x
+        dotnet-version: 5.0.x
 
     - name: Run Amazon Search tests
       run: dotnet test --logger "html;LogFileName=TestOutput.html"
