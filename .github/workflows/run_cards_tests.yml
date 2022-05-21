@@ -1,0 +1,37 @@
+name: Run Cards HomeTask tests 
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+    - cron: "0 0 * * 6"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./17DeleteMethodValidationHt
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 3.1.x
+
+    - name: Run Amazon Search tests
+      run: dotnet test --logger "html;LogFileName=TestOutput.html"
+
+    - name: Publish test report
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-report
+        path: 17DeleteMethodValidationHt/TestResults/TestOutput.html
