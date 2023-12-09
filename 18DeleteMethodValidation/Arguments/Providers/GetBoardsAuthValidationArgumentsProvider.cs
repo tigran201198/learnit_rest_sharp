@@ -29,7 +29,7 @@ namespace _17DeleteMethodValidation.Arguments.Providers
                     {
                         Parameter.CreateParameter("token", UrlParamValues.ValidToken, ParameterType.QueryString)
                     },
-                    ErrorMessage = "invalid key"
+                    ErrorMessage = "invalid app key"
                 }
             };
             yield return new object[]
